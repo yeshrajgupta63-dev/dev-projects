@@ -1,0 +1,74 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: hwb(3 2% 44%);
+  text-align: center;
+}
+
+.container {
+  
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.game{
+  display:grid;
+  grid-template-columns:repeat(3,100px);
+  gap:8px;
+}
+
+.box {
+  width:100px;
+  height:100px;
+  border:1px solid white;
+  background:hwb(11 11% 7%);
+  border-radius:20%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:48px;
+  color: hwb(3 6% 53%);
+  cursor:pointer;
+  
+}
+
+#reset-btn {
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color:#191913;
+  color:#fff;
+  border-radius:1rem;
+  border:none;
+}
+
+#new-btn {
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color:#191913;
+  color:#fff;
+  border-radius:1rem;
+  border:none;
+}
+
+#msg {
+  color:#ffffc7;
+  font-size:70px;
+}
+
+.winNote{
+  height: 80vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+  
+}
+
+.hide{
+  display: none;
+}
