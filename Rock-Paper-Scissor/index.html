@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock-Paper-Scissor </title>
+  <link rel="stylesheet"  href="style.css">
+</head>
+<body>
+  <h1> Rock-Paper-Scissor </h1>
+  <div class="choices">
+    <div class="choice" id="rock">
+      <img src="./images/rock.jpg">
+    </div>
+    <div class="choice" id="paper">
+      <img src="./images/paper.jpg">
+    </div>
+    <div class="choice" id="scissors">
+      <img src="./images/scissor.jpg">
+    </div>
+  </div>
+
+  
+  <div class="score-board">
+    <div class="score">
+      <p id="user-score">0</p>
+      <p>you</p>
+    </div>
+    <div class="score">      
+      <p id="comp-score">0</p>
+      <p>comp</p>
+    </div>  
+  </div>
+
+  <div class="msg-container">
+    <p id="msg">Play your move</p>
+  </div>
+
+  <div class="reset-container">
+    <button id="reset-btn">restart</button>
+  </div>
+  
+  <script src="game.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+<script>eruda.init();</script>
+
+</body>
+</html>
